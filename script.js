@@ -30,7 +30,15 @@ const recordValue = (event) => {
         body : JSON.stringify(data),
     })
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+        alert('Registrado com sucesso')
+        console.log(data)
+    });
+
+    username.value = ''
+    local.value = ''
+    item.value = ''
+    itemValue.value = ''
 
 }
 
