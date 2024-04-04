@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    background-color: rgba(168, 12, 46, 0.699);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: rgb(107, 2, 2);
+}
+form {
+    background-color: rgb(255, 238, 251);
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 1px 3px rgba(0, 0, 0, 0.349);
+}
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+label span {
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: 900;
+    font-size: large;
+    color: rgb(107, 2, 2);
+}
+label input {
+    padding: 5px;
+    width: 90%;
+}
+
+button {
+    border-style: none;
+    border-radius: 15px;
+    padding: 15px;
+    height: 10%;
+    width: 60%;
+
+    background-color: rgba(168, 12, 46, 0.699);
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.692);
+    font-size: large;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+button:active{
+    color: #bdb2b2;
+    background-color: rgba(117, 10, 34, 0.699);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.692);
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        background-color: rgb(255, 238, 251);
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+    }
+    h1 {
+        text-align: center;
+    }
+}
